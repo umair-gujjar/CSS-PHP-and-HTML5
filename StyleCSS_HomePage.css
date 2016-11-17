@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu{display:block;}
+ 
+.menu li{display: inline-block;
+position: relative;
+z-index:100;}
+ 
+.menu li a {font-weight:600;
+text-decoration:none;
+padding:11px;
+display:block;
+color:#009;
+ 
+-webkit-transition: all 0.2s ease-in-out 0s;
+   -moz-transition: all 0.2s ease-in-out 0s;
+   -o-transition: all 0.2s ease-in-out 0s;
+   -ms-transition: all 0.2s ease-in-out 0s;
+   transition: all 0.2s ease-in-out 0s;
+}
+ 
+.menu li a:hover, .menu li:hover > a{color:#ffffff;
+background:#9CA3DA;}
+
+.menu ul {display: none;
+margin: 0;
+padding: 0;
+width: 150px;
+position: absolute;
+top: 43px;
+left: 0px;
+background: #ffffff;
+}
+
+/* display second level menu on hover */
+.menu li:hover > ul{ display: block;}
+ 
+.menu ul li {display:block;
+float: none;
+background:none;
+margin:0;
+padding:0;
+}
+ 
+.menu ul li a {font-size:12px;
+font-weight:normal;
+display:block;
+color:#797979;
+border-left:3px solid #ffffff;
+background:#ffffff;}
+ 
+.menu ul li a:hover, .menu ul li:hover > a{
+background:#f0f0f0;
+border-left:3px solid #9CA3DA;
+color:#797979;
+}
+
+/* change level 3 menu positions */
+.menu ul ul {left: 149px;
+	top: 0px;
+}
+
+body {
+		background-color:white;
+		background-image:url(Background.png);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+		margin: 0;
+		padding: 0;
+		color: #000;
+		
+	 }
+	 
+	#body1 {
+		background-color:white;
+		background-image:url(NBA/123979-desktop-wallpaper-desktop-wallpaper-1280x1024.png);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+		margin: 0;
+		padding: 0;
+		color: #000;
+		
+	 }
+	 
+	 #body2 {
+		background-color:white;
+		background-image:url(NFL/1777504.png);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+		margin: 0;
+		padding: 0;
+		color: #000;
+		
+	 }
+	  
+p 	 {
+		color:#000;
+		font-family:"Comic Sans MS", cursive;
+		font-size:15px;
+		margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+		padding-right: 15px;
+		
+		padding-left: 15px;
+	 }
+	 
+h1	 {
+		alignment-adjust:central;
+		text-shadow:#333;
+		text-decoration:underline;
+		animation-direction:alternate;
+		font-family:"Arial Black", Gadget, sans-serif;
+		font-size:40px;
+	 }
+h2 	 {
+		font-family:"Arial Black", Gadget, sans-serif;
+		font-size:25px;
+	 }
+p.one	 {
+		
+			border:dotted 5px blue;
+			margin-left:500px;
+			margin-right:500px;
+	 }
+p.center{
+			color:#000;
+			font-family:"Comic Sans MS", cursive;
+			font-size:25px;
+			text-align:center;
+			border:dotted 5px blue;
+			text-decoration:underline;
+			
+	 }
+td 	{
+		color:#000;
+		font-family:"Comic Sans MS", cursive;
+		font-size:25px;
+		text-align:center;
+}
+
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	color:#006;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo. ~~ */
+.header {
+	background-color:#FFF;
+}
+
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color:white;
+	padding-bottom: 10px;
+	
+}
+.content {
+
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+	background-image:url(Background.png);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background-color:white;
+	padding: 10px 0;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+
+ul.nav {
+	list-style: none; 
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the anchor block properties so it fills out the whole LI that contains it so that the entire area reacts to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	color:#FFF;
+	background-color:#009;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color:#06F;
+	color: #FFF;
+}
+
+/* ~~ The footer styles ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+submit{
+background-color:#00F;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+border-style: solid;
+border-color:black;
+border-radius:10%;
+cursor:pointer;
+}
